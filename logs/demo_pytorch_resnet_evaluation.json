@@ -1,0 +1,22 @@
+{
+  "model_name": "PyTorch ResNet",
+  "test_accuracy": 83.83061081033327,
+  "class_metrics": {
+    "stoner": {
+      "precision": 0.7881308202648435,
+      "recall": 0.8882517628999747,
+      "f1_score": 0.8352014600085144
+    },
+    "alcohol": {
+      "precision": 0.7921946229953,
+      "recall": 0.7694047452973675,
+      "f1_score": 0.7806333871638834
+    },
+    "normal": {
+      "precision": 0.8679791997804981,
+      "recall": 0.7957098828008473,
+      "f1_score": 0.8302748807599316
+    }
+  },
+  "evaluation_date": "2025-08-19T16:03:25.461468"
+}

@@ -1,0 +1,22 @@
+{
+  "model_name": "TensorFlow EfficientNet",
+  "test_accuracy": 80.2604785237361,
+  "class_metrics": {
+    "stoner": {
+      "precision": 0.867261448163598,
+      "recall": 0.8806750903828613,
+      "f1_score": 0.8739168012154316
+    },
+    "alcohol": {
+      "precision": 0.8639533182376173,
+      "recall": 0.8882892788436567,
+      "f1_score": 0.8759523039677379
+    },
+    "normal": {
+      "precision": 0.8844059210345436,
+      "recall": 0.8962346732488393,
+      "f1_score": 0.8902810080848778
+    }
+  },
+  "evaluation_date": "2025-08-19T16:03:25.461319"
+}

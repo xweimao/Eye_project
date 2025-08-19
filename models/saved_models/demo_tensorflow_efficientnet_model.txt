@@ -1,0 +1,3 @@
+Demo TensorFlow EfficientNet model
+Best accuracy: 80.0%
+Trained on: 2025-08-19T16:03:22.957456
