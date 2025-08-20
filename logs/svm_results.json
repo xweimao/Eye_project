@@ -1,22 +1,22 @@
 {
   "model_name": "SVM",
-  "accuracy": 0.9,
-  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      0.833     1.000     0.909         5\n     alcohol      1.000     0.800     0.889         5\n      normal      0.900     0.900     0.900        10\n\n    accuracy                          0.900        20\n   macro avg      0.911     0.900     0.899        20\nweighted avg      0.908     0.900     0.899        20\n",
+  "accuracy": 0.45,
+  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      0.000     0.000     0.000         5\n     alcohol      0.333     0.400     0.364         5\n      normal      0.500     0.700     0.583        10\n\n    accuracy                          0.450        20\n   macro avg      0.278     0.367     0.316        20\nweighted avg      0.333     0.450     0.383        20\n",
   "confusion_matrix": [
     [
-      5,
       0,
-      0
-    ],
-    [
-      0,
-      4,
-      1
-    ],
-    [
       1,
+      4
+    ],
+    [
       0,
-      9
+      2,
+      3
+    ],
+    [
+      0,
+      3,
+      7
     ]
   ],
   "class_names": [
