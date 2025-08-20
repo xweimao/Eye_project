@@ -90,14 +90,28 @@ class RealEyeImageScraper:
         
         return images
     
-    def get_public_domain_images(self, class_name, limit=10):
+    def get_public_domain_images(self, class_name, limit=50):
         """Get public domain images for a specific class"""
         search_terms = {
-            'normal': ['human eye anatomy', 'healthy eye close up', 'normal human iris'],
-            'alcohol': ['bloodshot eyes', 'red eyes fatigue', 'tired eyes'],
-            'stoner': ['droopy eyes', 'sleepy eyes', 'heavy eyelids']
+            'normal': [
+                'human eye anatomy', 'healthy eye close up', 'normal human iris',
+                'eye examination', 'ophthalmology', 'clear eyes', 'human vision',
+                'eye structure', 'pupil iris', 'eye health', 'normal vision',
+                'eye medical', 'human eyeball', 'eye photography', 'eye portrait'
+            ],
+            'alcohol': [
+                'bloodshot eyes', 'red eyes fatigue', 'tired eyes', 'conjunctivitis',
+                'eye irritation', 'red eye syndrome', 'eye inflammation',
+                'subconjunctival hemorrhage', 'eye redness', 'irritated eyes',
+                'eye strain', 'dry eyes', 'eye allergy', 'pink eye'
+            ],
+            'stoner': [
+                'droopy eyes', 'sleepy eyes', 'heavy eyelids', 'ptosis',
+                'tired eyelids', 'eye fatigue', 'drowsy eyes', 'sleepy face',
+                'eyelid drooping', 'eye exhaustion', 'weary eyes', 'fatigued eyes'
+            ]
         }
-        
+
         terms = search_terms.get(class_name, ['human eye'])
         return self.get_wikimedia_commons_images(terms, limit)
     
@@ -315,28 +329,36 @@ class RealEyeImageScraper:
         
         return created_count
     
-    def collect_all_real_images(self, target_per_class=7):
+    def collect_all_real_images(self, target_per_class=35):
         """Collect real images for all classes"""
-        print("🌐 REAL EYE IMAGE COLLECTION")
+        print("🌐 REAL EYE IMAGE COLLECTION - EXPANDED")
         print("=" * 50)
-        print("🎯 Collecting real human eye photographs")
+        print("🎯 Collecting 100+ real human eye photographs")
         print("⚠️  Note: Using public domain sources and ethical guidelines")
-        
+
         results = {}
-        
+
+        # Distribute 100 images: normal=50, alcohol=25, stoner=25
+        class_targets = {
+            'normal': 50,    # 50% of dataset
+            'alcohol': 25,   # 25% of dataset
+            'stoner': 25     # 25% of dataset
+        }
+
         for class_name in ['normal', 'alcohol', 'stoner']:
-            target_count = target_per_class
+            target_count = class_targets[class_name]
             collected = self.collect_real_images_for_class(class_name, target_count)
             results[class_name] = collected
         
         print(f"\n🎉 COLLECTION COMPLETED!")
         print("=" * 50)
         total_collected = sum(results.values())
-        total_target = target_per_class * 3
-        
+        total_target = sum(class_targets.values())
+
         for class_name, count in results.items():
-            print(f"📊 {class_name:8s}: {count:2d}/{target_per_class} images")
-        
+            target = class_targets[class_name]
+            print(f"📊 {class_name:8s}: {count:2d}/{target} images")
+
         print(f"📊 Total: {total_collected}/{total_target} images")
         
         return results
@@ -347,7 +369,7 @@ if __name__ == "__main__":
     print("🔒 Following ethical guidelines and using public domain sources")
     
     scraper = RealEyeImageScraper()
-    results = scraper.collect_all_real_images(target_per_class=7)
+    results = scraper.collect_all_real_images()  # Will collect 100 images total
     
     print(f"\n✅ Real image collection completed!")
     print(f"💡 Next steps:")
