@@ -1,22 +1,22 @@
 {
   "model_name": "Logistic Regression",
-  "accuracy": 0.55,
-  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      0.750     0.600     0.667         5\n     alcohol      0.400     0.400     0.400         5\n      normal      0.545     0.600     0.571        10\n\n    accuracy                          0.550        20\n   macro avg      0.565     0.533     0.546        20\nweighted avg      0.560     0.550     0.552        20\n",
+  "accuracy": 0.9,
+  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      1.000     1.000     1.000         5\n     alcohol      1.000     0.600     0.750         5\n      normal      0.833     1.000     0.909        10\n\n    accuracy                          0.900        20\n   macro avg      0.944     0.867     0.886        20\nweighted avg      0.917     0.900     0.892        20\n",
   "confusion_matrix": [
     [
-      3,
+      5,
       0,
+      0
+    ],
+    [
+      0,
+      3,
       2
     ],
     [
       0,
-      2,
-      3
-    ],
-    [
-      1,
-      3,
-      6
+      0,
+      10
     ]
   ],
   "class_names": [
