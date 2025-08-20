@@ -1,22 +1,22 @@
 {
   "model_name": "Random Forest",
-  "accuracy": 0.95,
-  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      1.000     1.000     1.000         5\n     alcohol      1.000     0.800     0.889         5\n      normal      0.909     1.000     0.952        10\n\n    accuracy                          0.950        20\n   macro avg      0.970     0.933     0.947        20\nweighted avg      0.955     0.950     0.948        20\n",
+  "accuracy": 0.8,
+  "classification_report": "              precision    recall  f1-score   support\n\n      stoner      1.000     1.000     1.000         1\n     alcohol      0.000     0.000     0.000         1\n      normal      0.750     1.000     0.857         3\n\n    accuracy                          0.800         5\n   macro avg      0.583     0.667     0.619         5\nweighted avg      0.650     0.800     0.714         5\n",
   "confusion_matrix": [
     [
-      5,
+      1,
       0,
       0
     ],
     [
       0,
-      4,
+      0,
       1
     ],
     [
       0,
       0,
-      10
+      3
     ]
   ],
   "class_names": [
