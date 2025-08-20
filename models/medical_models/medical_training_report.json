@@ -1,0 +1,161 @@
+{
+  "dataset_info": {
+    "classes": [
+      "normal",
+      "diabetic_retinopathy",
+      "hypertensive_retinopathy",
+      "age_macular_degeneration"
+    ],
+    "class_mapping": {
+      "normal": 0,
+      "diabetic_retinopathy": 1,
+      "hypertensive_retinopathy": 2,
+      "age_macular_degeneration": 3
+    },
+    "total_samples": 100,
+    "features_count": 26
+  },
+  "model_performance": {
+    "RandomForest": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0,
+      "classification_report": {
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "diabetic_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "hypertensive_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "age_macular_degeneration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        }
+      }
+    },
+    "SVM": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0,
+      "classification_report": {
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "diabetic_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "hypertensive_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "age_macular_degeneration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        }
+      }
+    },
+    "LogisticRegression": {
+      "accuracy": 1.0,
+      "cv_mean": 1.0,
+      "cv_std": 0.0,
+      "classification_report": {
+        "normal": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "diabetic_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "hypertensive_retinopathy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "age_macular_degeneration": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 5.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        }
+      }
+    }
+  },
+  "feature_importance": {
+    "color_statistics": "颜色统计特征 (RGB均值、标准差等)",
+    "color_ratios": "颜色比率特征 (红绿比、红蓝比等)",
+    "brightness_contrast": "亮度对比度特征",
+    "texture_features": "纹理特征 (梯度)",
+    "region_features": "区域特征 (中心vs边缘)",
+    "vessel_features": "血管相关特征",
+    "lesion_features": "病变检测特征"
+  }
+}

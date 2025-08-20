@@ -1,0 +1,10 @@
+{
+  "MEDICAL_CLASSES": {
+    "normal": 25,
+    "diabetic_retinopathy": 25,
+    "hypertensive_retinopathy": 25,
+    "age_macular_degeneration": 25
+  },
+  "MEDICAL_DATA_DIR": "/mnt/persist/workspace/data/raw/medical",
+  "DATASET_TYPE": "medical_odir"
+}
